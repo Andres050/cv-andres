@@ -1,0 +1,7 @@
+name: test
+description: 'Tailwindcss + Octobercms starter Theme'
+author: 'Refineria Web'
+homepage: 'https://www.refineriaweb.com'
+code: 'refineriaweb'
+parent: ''
+database: '0'

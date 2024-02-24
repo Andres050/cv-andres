@@ -1,0 +1,49 @@
+$fa-font-path: '../fonts';
+//@import 'node_modules/@fortawesome/fontawesome-free/webfonts';
+@import 'node_modules/@fortawesome/fontawesome-free/scss/fontawesome.scss';
+@import 'node_modules/@fortawesome/fontawesome-free/scss/regular.scss';
+@import 'node_modules/@fortawesome/fontawesome-free/scss/solid.scss';
+@import 'node_modules/@fortawesome/fontawesome-free/scss/brands.scss';
+@import './node_modules/sal.js/src/sal';
+@import '_components.select2.min';
+@import 'node_modules/flatpickr/dist/flatpickr.min';
+[data-toggle-class] {
+    img, svg {
+        pointer-events: none;
+    }
+}
+
+.swiper-carousel-arrows {
+    @apply absolute top-1/2 -translate-y-1/2 left-0 w-full flex justify-between z-10 pointer-events-none;
+    .swiper-button-disabled {
+        @apply opacity-50;
+    }
+}
+.swiper-carousel-arrows-left {
+    @apply relative xl:-left-96 pointer-events-auto -xl:bg-white/90 -xl:rounded-[9px];
+}
+.swiper-carousel-arrows-right {
+    @apply relative xl:-right-96 pointer-events-auto -xl:bg-white/90 -xl:rounded-[9px];
+}
+.swiper-pagination {
+    &:not(.swiper-pagination-gallery)
+    {
+        bottom: -32px !important;
+    }
+    &.swiper-services-pagination,
+    &.swiper-rooms-pagination
+    {
+        bottom: 0 !important;
+    }
+    &.swiper-pagination-gallery {
+        text-align: right;
+    }
+    .swiper-pagination-bullet {
+        border:2px solid #283D5C;
+        background: transparent;
+        opacity: 1;
+        &.swiper-pagination-bullet-active {
+            background: #283D5C;
+        }
+    }
+}

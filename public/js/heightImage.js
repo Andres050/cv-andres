@@ -1,0 +1,1 @@
+$('#js-heightImage').css('height', $('#js-heightImage-container').innerHeight());

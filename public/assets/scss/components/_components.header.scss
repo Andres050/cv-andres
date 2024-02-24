@@ -1,0 +1,52 @@
+.c-header {
+    @apply bg-primary;
+
+    &__block {
+        @apply flex lg:flex-row flex-col-reverse justify-between text-left items-center -lg:pb-[25px];
+    }
+
+    &__content {
+        @apply w-full;
+        h1 {
+            @apply text-white text-[32px] lg:text-[36px] font-semibold;
+        }
+        h2 {
+            @apply text-secondary text-[24px] lg:text-[26px] font-normal;
+        }
+        p {
+            @apply text-white text-[12px] lg:text-[16px] font-light pt-[10px];
+        }
+    }
+
+    &__logo {
+        @apply p-[25px];
+        img {
+            @apply border-secondary border-[4px] lg:border-[6px] lg:max-h-[200px] max-h-[150px];
+            border-radius: 50%;
+        }
+    }
+
+    &__capitalize {
+        @apply capitalize;
+    }
+
+
+    &__section {
+        @apply bg-tertiary py-[10px] text-white flex gap-[30px] text-[14px] items-center -lg:justify-center;
+
+        a {
+            @apply lg:w-[50%] flex gap-[10px] items-center;
+
+            &:first-child {
+                @apply lg:justify-end justify-center;
+            }
+            &:last-child {
+                @apply lg:justify-start justify-center;
+            }
+
+            &:hover {
+                @apply underline;
+            }
+        }
+    }
+}
